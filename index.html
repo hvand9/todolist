@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your life, your rules</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header><h1>Quiz & Todolist</h1></header>
+    
+
+    <!--a new class is being defined with the name phone 
+    this is where the object is being built with a logo -->
+    <div class="front">
+        <h3>Welcome to the TODO-list</h3>
+    </div>
+   
+    <div class="phone">
+        <div class="header">
+            <img src="logo.PNG" alt="logo" class="logo" style="width:100px;height:100px;">
+            <br>
+            <h2>Your own personal TO-DO list</h2>
+            <center><p>Write down your plans, goals and achievements.</p></center>
+            <center><div class="removeText">&#128465; Clean your checked plans</div></center> <!-- his button cleans out your data -->
+        </div>
+
+        <div class="todo-body">
+            <ul class="todo-list">
+                <li class="todo-item">
+                    <input type="checkbox"/> Welcome to your Todo-List
+                </li>
+            </ul>
+        </div>
+
+        <input type="text" class="todoInput" placeholder="Enter a task and press enter">
+
+    </div>
+    <!--Files-->
+    <script src="manifest.json"></script>
+    <script src="index.js"></script>
+    <script src="registerServiceWorker.js"></script>
+    <script src="firebaseconfig.js"></script>
+    
+    <div class="quiz">
+    <center><h1>Welcome to the smartphone quiz. Click on the button to start the quiz at anytime!
+        Remember to share your results at thisemail@mail.com!
+    </h1></center>
+    </div>
+    <div class="quizbutton">
+    
+    <center><button onclick="quizFunction()">Start the quiz!</button><center>
+    </div>  
+
+    
+
+
+
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="index.css">
+
+    <footer>
+        <p>This webpage was created with Javascript | Salman Mohammad Nadeem. WEB2020 Lyngby</p>
+        
+    </footer>
+
+   
+</body>
+</html>
