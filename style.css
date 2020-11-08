@@ -1,4 +1,6 @@
-* {
+* 
+
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box !important;
@@ -6,7 +8,7 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
-    background: #f7f7f7;
+    background: #ff416c;
 }
 .front{
     width: 100%;
@@ -14,12 +16,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #020101; 
+    background:#ff416c; 
     color: #e7e7e7;
+    display: none;
+    
     
   
 
 }
+
 
 .quiz{
     width: 100%;
@@ -27,8 +32,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #020101; 
+    background: #ff416c; 
     color: #e7e7e7;
+    display: none;
+
     
   
 
@@ -39,8 +46,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #020101; 
+    background: #ff416c; 
     color: #e7e7e7;
+    
     
   
 
@@ -52,7 +60,7 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #ff416c; 
+  background: #ffffff; 
 
 }
 
@@ -62,7 +70,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #ff416c; 
+  background: #ffffff; 
 }
 
 .h3{
@@ -83,6 +91,7 @@ header{
     border-radius: 8px;
     overflow: hidden;
     background: #fff;
+    display: none;
 }
 
 .header {
@@ -161,3 +170,42 @@ input[type="checkbox"] {
     border: 0;
     border-top: 1px solid #e7e7e7;
 }
+
+.button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 400px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
